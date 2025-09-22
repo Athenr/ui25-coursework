@@ -12,6 +12,6 @@
         color: white;
         text-align: center;
         padding: 0;
-        border-radius: 25px;
+        border-radius: 50px;
     }
 </style>

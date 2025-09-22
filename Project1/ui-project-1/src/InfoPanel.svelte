@@ -1,16 +1,32 @@
 <script>
+    import RankBox from './RankBox.svelte';
+    import PlayerInfo from './PlayerInfoBox.svelte';
+    import StatisticsBox from './StatisticsBox.svelte';
 </script>
 
 <div class="InfoPanel">
-    <h1>Hello1.</h1>
+    <div class="RankAndPlayerInfoDiv">
+        <RankBox />
+        <PlayerInfo />
+    </div>
+
+    <StatisticsBox />
 </div>
 
 <style>
     .InfoPanel {
-        flex: 1;
-        background-color: #3F3F49;
+        flex: .6;
         color: white;
         text-align: center;
-        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .RankAndPlayerInfoDiv {
+        display: flex;
+        flex-direction: row;
+        flex: 0 0 30%;
+        gap: 2rem;
+        padding-bottom: 2rem;
     }
 </style>

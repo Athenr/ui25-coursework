@@ -1,16 +1,20 @@
 <script>
+    import TotalOverviewBox from './TotalOverviewBox.svelte';
+    import EntriesBox from './EntriesBox.svelte';
 </script>
 
 <div class="EntryPanel">
-    <h1>Hello2.</h1>
+    <TotalOverviewBox />
+    <EntriesBox />
 </div>
 
 <style>
     .EntryPanel {
-        flex: 1;
-        background-color: #3F3F49;
+        flex: .4;
+        display: flex;
+        flex-direction: column;
         color: white;
         text-align: center;
-        padding: 1rem;
+        gap: 2rem;
     }
 </style>
