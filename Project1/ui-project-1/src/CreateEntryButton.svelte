@@ -1,8 +1,8 @@
 <script>
-
+    export let onOpenModal;
 </script>
 
-<button class="CreateEntryButton">
+<button class="CreateEntryButton" on:click={onOpenModal}>
     <b>+</b> New Match
 </button>
 
