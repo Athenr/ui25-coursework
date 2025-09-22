@@ -3,7 +3,8 @@
 </script>
 
 <div class="StatisticsBox">
-    <p>Statistics box</p>
+    <h2>STATISTICS</h2>
+
 </div>
 
 
@@ -15,5 +16,7 @@
         text-align: center;
         padding: 1rem;
         border-radius: 20px;
+        display: flex;
+        flex-direction: column;
     }
 </style>
