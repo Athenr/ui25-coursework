@@ -15,7 +15,7 @@
 
 <style>
     .InfoPanel {
-        flex: .6;
+        flex: .5;
         color: white;
         text-align: center;
         display: flex;

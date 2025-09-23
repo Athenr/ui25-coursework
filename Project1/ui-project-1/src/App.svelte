@@ -28,9 +28,9 @@
         height: 100vh;
         display: flex;
         flex-direction: column;
-        gap: 3rem;
+        gap: 2rem;
         margin: 0;
-        padding: 3rem;
+        padding: 2rem;
     }
 
     .BottomPanel {

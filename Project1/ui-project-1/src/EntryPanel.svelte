@@ -10,7 +10,7 @@
 
 <style>
     .EntryPanel {
-        flex: .4;
+        flex: .5;
         display: flex;
         flex-direction: column;
         color: white;
