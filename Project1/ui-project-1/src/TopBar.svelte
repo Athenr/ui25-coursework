@@ -7,7 +7,7 @@
 </script>
 
 <div class="TopBar">
-    <h2>UNNAMED GAME TRACKER APP</h2>
+    <h2>DUELIST | Gaming Stat Tracker</h2>
     <div class="buttons">
         <button class="theme-button" on:click={cycleTheme}>Cycle Theme</button>
         <button class="logout-button" on:click={logout}>Logout</button>

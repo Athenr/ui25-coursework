@@ -10,7 +10,7 @@
 <div class="RankBox">
     <div class="rank-header">
         <img src="{RankImage}" alt="Rank Icon" class="rank-icon" />
-        <h3>Current Rank</h3>
+        <h3>Grandmaster (Top 2% NA)</h3>
     </div>
 
     <div class="rank-info">

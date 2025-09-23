@@ -79,12 +79,22 @@
     function handleSelect(id) {
         selectedMatchId.set(id === $selectedMatchId ? null : id);
     }
+
+    function deleteSelected() {
+        if ($selectedMatchId) {
+            matches.update(current => current.filter(match => match.id !== $selectedMatchId));
+            selectedMatchId.set(null);
+        } else {
+            alert("No match selected!");
+        }
+    }
 </script>
 
 <div class="EntriesBox">
     <div class="EntriesHeader">
         <h2 class="MatchHistoryTitle">MATCH HISTORY</h2>
         <CreateEntryButton onOpenModal={openModal} />
+        <button class="deleteButton" on:click={deleteSelected}>Delete Selected</button>
     </div>
     <div class="EntriesContainer">
         {#each $matches as match (match.id)}
@@ -425,5 +435,22 @@
     #submitButton:active {
         background-color: #5d548a;
         border: 3px solid #8478c5;
+    }
+
+    .deleteButton {
+        margin-left: 1rem;
+        background-color: #b33;
+        color: white;
+        border: none;
+        border-radius: 7px;
+        padding: 0.1rem 0rem;
+        cursor: pointer;
+        border: 3px solid #8478c5;
+        font-weight: bold;
+        transition: background 0.2s;
+    }
+
+    .deleteButton:hover {
+        background-color: #d55;
     }
 </style>

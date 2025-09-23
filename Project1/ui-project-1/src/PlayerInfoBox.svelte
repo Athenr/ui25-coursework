@@ -1,8 +1,9 @@
 <script>
     import { onMount } from 'svelte';
     import { matches } from './main.js';
+    import MSILogo from './MSILogo.png';
 
-    let playerName = "Player One";
+    let playerName = "Jane \"ravnyx\" Doe";
     let sessionStart = new Date();
     let currentTime = new Date();
     let totalUsageSeconds = 0;
@@ -37,7 +38,7 @@
 
 <div class="PlayerInfoBox">
     <div class="profile-header">
-        <div class="profile-pic"></div>
+        <img src="{MSILogo}" alt="profile" class="profile-pic" />
         <div class="player-name">{playerName}</div>
     </div>
 
