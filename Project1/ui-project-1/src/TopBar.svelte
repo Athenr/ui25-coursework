@@ -1,10 +1,8 @@
 <script>
+    export let cycleTheme;
+
     function logout() {
         console.log("Logout clicked");
-    }
-
-    function cycleTheme() {
-        console.log("Theme cycle clicked");
     }
 </script>
 

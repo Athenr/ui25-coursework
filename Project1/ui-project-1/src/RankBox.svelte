@@ -1,5 +1,6 @@
 <script>
     import { matches } from './main.js';
+    import RankImage from './RankImage.png';
 
     $: totalWins = $matches.filter(m => m.matchResult === "Victory").length;
     $: totalLosses = $matches.filter(m => m.matchResult === "Defeat").length;
@@ -8,7 +9,7 @@
 
 <div class="RankBox">
     <div class="rank-header">
-        <div class="rank-icon"></div>
+        <img src="{RankImage}" alt="Rank Icon" class="rank-icon" />
         <h3>Current Rank</h3>
     </div>
 

@@ -43,6 +43,10 @@
 
 
 <style>
+    * {
+        box-sizing: border-box;
+    }
+
     .StatisticsBox {
         flex: 1;
         background-color: #3F3F49;

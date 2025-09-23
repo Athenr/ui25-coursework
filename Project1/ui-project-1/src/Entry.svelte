@@ -32,25 +32,33 @@
     }
 </script>
 
-<button 
-    class="Entry {selected ? 'selected' : ''}" 
-    on:click={onSelect}
-    style="--gradient: {gradient}; --hover-gradient: {hoverGradient}; --border-color: {borderColor};">
-    
-    <div class="EntryContent">
-        <div class="Result">{matchResult}</div>
-        <div class="Name">{matchName}</div>
-        <div class="ScoreAndKDASpan">
-            <span class="Score">{score.team} - {score.opponent}</span>
-            <span class="KDA">{kda.kills} / {kda.deaths} / {kda.assists}</span>
+<div class="EntryWrapper">
+    <button 
+        class="Entry {selected ? 'selected' : ''}" 
+        on:click={onSelect}
+        style="filter: hue-rotate(0deg); --gradient: {gradient}; --hover-gradient: {hoverGradient}; --border-color: {borderColor};">
+        
+        <div class="EntryContent">
+            <div class="Result">{matchResult}</div>
+            <div class="Name">{matchName}</div>
+            <div class="ScoreAndKDASpan">
+                <span class="Score">{score.team} - {score.opponent}</span>
+                <span class="KDA">{kda.kills} / {kda.deaths} / {kda.assists}</span>
+            </div>
+            <div class="Date">{matchDate}</div>
         </div>
-        <div class="Date">{matchDate}</div>
-    </div>
-</button>
+    </button>
+</div>
 
 <style>
     * {
         box-sizing: border-box;
+    }
+
+    /*Failed attempt at keeping the red/green colors from rotating on theme change.  :( */
+    .EntryWrapper {
+        filter: hue-rotate(0deg);
+        isolation: isolate;
     }
 
     .Entry {
